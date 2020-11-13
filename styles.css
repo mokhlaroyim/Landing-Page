@@ -43,11 +43,35 @@ main{
 .img-21{
     position: absolute;
 }
+#toggle{
+    position: absolute;
+    top:10;
+    display: none;
+}
+#toggle-line-1, #toggle-line-2, #toggle-line-3{
+    width: 30px;
+    height: 4px;
+    background: var(--text-clr);
+    margin-top: 5px;
+    transition: 0.4s;
+}
+
+.change #toggle-line-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change #toggle-line-2 {opacity: 0;}
+  
+  .change #toggle-line-3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -4px);
+    transform: rotate(45deg) translate(-6px, -4px);
+  }
 
 #circle img {
     width: 4.3%;
     position: fixed;
-    left: 50;
+    left: 15;
     top: 165;
     z-index: 300;
 }
@@ -55,6 +79,7 @@ main{
 .img-1{
     top: 120;
     right: -400;
+    z-index: 1;
 }
 
 .img-1 img, .img-2 img, 
@@ -189,19 +214,20 @@ main{
     padding: 8px
 }
 
-.links-left{
+#links-left{
     margin-right: 280px;
 }
 
-.links-left a, .links-right a{
+#links-left a, #links-right a{
     font-size: 13px;
     color: var(--text-clr);
     border-bottom: 1px solid var(--accent-clr);
     padding-bottom: 5px;
     text-decoration: none;
+    /* display: none; */
 }
 
-.links-left a, .links-right a{
+#links-left a, #links-right a{
     margin-right: 35px;
 }
 

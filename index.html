@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="media.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
@@ -95,16 +96,22 @@
 
             <header>
                 <nav class = "navbar">
-                    <div class="container">
+                    <div class="container head-container">
+                        <div id="toggle" onclick="myFunction(this)">
+                            <div id="toggle-line-1"></div>
+                            <div id="toggle-line-2"></div>
+                            <div id="toggle-line-3"></div>
+                        </div>
                         <div class="logo">
                             <img src="img/hughlass_logo.svg" alt="">
                         </div>
-                        <div class="links-left">
+                        
+                        <div id="links-left">
                             <a href="#">Контакты</a>
                             <a href="#">О нас</a>
                             <a href="#">Услуги</a>
                         </div>
-                        <div class="links-right">
+                        <div id="links-right">
                             <a href="#">Русский</a>
                             <a href="#">English</a>
                             <a href="#">Čeština</a>
@@ -120,11 +127,11 @@
                         <h1>ПРОФЕССИОНАЛЬНЫЙ ПОДХОД - <br/>ВЗВЕШЕННОЕ РЕШЕНИЕ</h1>
                     </div>
                     <div class="col-5"></div>
-                    <div class="col-5 subtext">
+                    <div class="col-7 subtext">
                         <p>По сути, косвенная реклама усиливает ролевой имидж предприятия, учитывая результат предыдущих медиа-кампаний. Поэтому пул лояльных изданий концентрирует креативный медийный канал. До недавнего времени считалось, что молодежная аудитория тормозит.</p>
                     </div>
                     <div class="col-12"></div>
-                    <div class="col-3 mt-3">
+                    <div class="col-5 mt-3">
                         <button class="btn">Подробнее</button>
                     </div>
                 </div>
@@ -136,15 +143,15 @@
                     </div>
                     <div class="col-md-4 line-2"></div>
 
-                    <div class="col-md-4">
+                    <div class="col-12 col-lg-4">
                         <div class="service-block">
                             <div class="line-2"></div>
                             <h1>Поставка сырья и материалов</h1>
                             <p>Поставка и производство технологического оборудования, сырья и расходных материалов для различных отраслей промышленности.</p>
-                            <button class="btn">Подробнее</button>
+                            <button class="btn btn-1">Подробнее</button>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-12 col-lg-4">
                         <div class="service-block">
                             <div class="line-2"></div>
                             <h1>Выполнение предпроектных работ</h1>
@@ -152,7 +159,7 @@
                             <button class="btn btn-3">Подробнее</button>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class=" col-12 col-lg-4">
                         <div class="service-block">
                             <div class="line-2"></div>
                             <h1>Управление <br>проектом</h1>
@@ -183,8 +190,8 @@
                 </div>
 
                 <div class="section-5 row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6 main-text-5">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6 main-text-5">
                         <form class="form-bg">
                             <div class="line-2 form-div-h1 ">
                                     <h1>ФОРМА ЗАЯВКИ</h1>
@@ -196,7 +203,7 @@
                             <button class="btn btn-6">Отправить заявку</button>
                         </form>      
                     </div>
-                    <div class="col-md-3"></div>
+                    <div class="col-lg-3"></div>
                 </div>
 
                 <div class="section-6 row">
@@ -247,7 +254,6 @@
         </main>
 
         <footer>
-            <img src="" alt="">
             <div class="footer">
                 <div class="footer-logo">
                     <img src="img/hughlass_logo.svg" alt="">
